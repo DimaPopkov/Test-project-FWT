@@ -78,7 +78,11 @@ h1{
 .login_input{
     width: 300px;
 
+    color: rgb(80, 80, 210);
+    font-weight: 600;
+
     border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
     border-radius: 5px;
 
     padding: 3px 5px;
