@@ -1,0 +1,165 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-between;
+    padding: 0 5%;
+
+    width: 100%;
+    height: 50px;
+
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    align-items: center;
+
+    background-color: rgb(100, 100, 230);
+}
+
+body{
+    padding: 0;
+
+    background-color: white;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    text-align: center;
+
+    width: 600px;
+    height: auto;
+
+    margin: 50px auto;
+    padding: 20px 0;
+
+    border: 0;
+    border-radius: 10px;
+
+    color: white;
+    background-color: rgb(100, 100, 230);
+}
+
+h1{
+    font-weight: 600;
+    font-size: 28px;
+}
+
+/* login page */
+
+.auth_form{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 10px;
+    row-gap: 10px;
+}
+
+.login_input{
+    width: 300px;
+
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+
+    padding: 3px 5px;
+}
+
+.login_btn{
+    margin-top: 10px;
+    padding: 0 20px;
+
+    width: auto;
+    height: 50px;
+
+    color: black;
+
+    border: 0;
+    border-radius: 8px;
+
+    font-weight: 600;
+
+    background-color: rgb(255, 255, 255);
+
+    cursor: pointer;
+}
+
+.auth_form_listBlock{
+    display: flex;
+    flex-direction: column;
+}
+
+/* main page */
+
+.main{
+    padding: 20px 20px;
+    row-gap: 20px;
+}
+
+.ToDoList{
+    display: flex;
+    flex-direction: column;
+
+    /* border: 2px solid rgb(80, 80, 210); */
+    border-radius: 10px;
+
+    background-color: white;
+    color: rgb(80, 80, 210);
+    /* background-color: rgb(80, 80, 210); */
+}
+
+.btn_completeTask{
+    width: auto;
+
+    margin: 6px;
+    padding: 5px 15px;
+
+    border: 2px solid rgb(60, 60, 180);
+    border-radius: 10px;
+
+    color: white;
+    font-weight: 600;
+
+    background-color: rgb(60, 60, 180);
+
+    cursor: pointer;
+}
+
+.btn_deleteTask{
+    position: absolute;
+
+    width: auto;
+
+    margin: 0 0 0 525px;
+    /* margin-left: 20px; */
+    padding: 5px 10px;
+
+    /* border: 2px solid rgb(255, 255, 255); */
+    border-radius: 10px;
+
+    color: rgb(80, 80, 210);
+    font-weight: 600;
+
+    /* background-color: rgb(255, 255, 255); */
+
+    cursor: pointer;
+}
